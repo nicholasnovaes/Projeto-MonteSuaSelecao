@@ -7,139 +7,143 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="select-box">
-        <form id="select-form">
-        <div class="select-player">
-            Goleiro:
-            <select name="goalkeeper" id="goalkeeper">
-                <option value="selecione">Selecione...</option>
-                <option value="alisson">Alisson</option>
-                <option value="ederson">Ederson</option>
-                <option value="weverton">Weverton</option>
-            </select>
-            <button>Escalar</button>
+    <header class="header">
+        <img src="images/CBF-logo.png" alt="Logo CBF">
+        <h1>Monte sua Seleção Brasileira 2022</h1>
+    </header>
+    <main>
+        <div id="select-box">
+            <form id="select-form">
+            <div class="select-player">
+                Goleiro:
+                <select name="goalkeeper" id="goalkeeper">
+                    <option value="selecione">Selecione...</option>
+                    <option value="alisson">Alisson</option>
+                    <option value="ederson">Ederson</option>
+                    <option value="weverton">Weverton</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Lateral direito:
+                <select name="right-back" id="right-back">
+                    <option value="selecione">Selecione...</option>
+                    <option value="danielAlves">Daniel Alves</option>
+                    <option value="danilo">Danilo</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Lateral esquerdo:
+                <select name="left-back" id="left-back">
+                    <option value="selecione">Selecione...</option>
+                    <option value="alexsandro">Alex Sandro</option>
+                    <option value="alexTelles">Alex Telles</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Zagueiro:
+                <select name="center-back1" id="center-back1">
+                    <option value="selecione">Selecione...</option>
+                    <option value="thiagoSilva">Thiago Silva</option>
+                    <option value="bremer">Bremer</option>
+                    <option value="marquinhos">Marquinhos</option>
+                    <option value="ederMilitao">Eder Militão</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Zagueiro:
+                <select name="center-back1" id="center-back1">
+                    <option value="selecione">Selecione...</option>
+                    <option value="thiagoSilva">Thiago Silva</option>
+                    <option value="bremer">Bremer</option>
+                    <option value="marquinhos">Marquinhos</option>
+                    <option value="ederMilitao">Eder Militão</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Volante:
+                <select name="center-mid" id="center-mid">
+                    <option value="selecione">Selecione...</option>
+                    <option value="casemiro">Casemiro</option>
+                    <option value="fabinho">Fabinho</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Segundo Volante:
+                <select name="mid1" id="mid1">
+                    <option value="selecione">Selecione...</option>
+                    <option value="brunoGuimaraes">Bruno Guimaraes</option>
+                    <option value="fred">Fred</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Meia:
+                <select name="mid2" id="mid2">
+                    <option value="selecione">Selecione...</option>
+                    <option value="evertonRibeiro">Everton Ribeiro</option>
+                    <option value="paqueta">Lucas Paquetá</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Ponta direita:
+                <select name="right-wing" id="right-wing">
+                    <option value="selecione">Selecione...</option>
+                    <option value="antony">Antony</option>
+                    <option value="rafinha">Rafinha</option>
+                    <option value="rodrygo">Rodrygo</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Centroavante:
+                <select name="striker" id="striker">
+                    <option value="selecione">Selecione...</option>
+                    <option value="richarlison">Richarlison</option>
+                    <option value="gabrielJesus">Gabriel Jesus</option>
+                    <option value="pedro">Pedro</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            <div class="select-player">
+                Ponta esquerda:
+                <select name="left-wing" id="left-wing">
+                    <option value="selecione">Selecione...</option>
+                    <option value="gabrielMartinelli">Gabriel Martinelli</option>
+                    <option value="neymar">Neymar</option>
+                    <option value="viniJunior">Vinicius Junior</option>
+                </select>
+                <button>Escalar</button>
+            </div>
+            </form>
         </div>
-
-        <div class="select-player">
-            Lateral direito:
-            <select name="right-back" id="right-back">
-                <option value="selecione">Selecione...</option>
-                <option value="danielAlves">Daniel Alves</option>
-                <option value="danilo">Danilo</option>
-            </select>
-            <button>Escalar</button>
+        <div id="field">
+            <div class="goal-zone">
+                <span class="goalkeeper">1</span>
+            </div>
+            <div class="back-zone">
+                <span class="right-back">2</span>
+                <span class="center-back">3</span>
+                <span class="center-back">4</span>
+                <span class="left-back">6</span>
+            </div>
+            <div class="mid-zone">
+                <span class="mid1">8</span>
+                <span class="mid2">10</span>
+                <span class="center-mid">5</span>
+            </div>
+            <div class="attack-zone">
+                <span class="right-wing">7</span>
+                <span class="striker">9</span>
+                <span class="left-wing">11</span>
+            </div>
         </div>
-
-        <div class="select-player">
-            Lateral esquerdo:
-            <select name="left-back" id="left-back">
-                <option value="selecione">Selecione...</option>
-                <option value="alexsandro">Alex Sandro</option>
-                <option value="alexTelles">Alex Telles</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-
-        <div class="select-player">
-            Zagueiro:
-            <select name="center-back1" id="center-back1">
-                <option value="selecione">Selecione...</option>
-                <option value="thiagoSilva">Thiago Silva</option>
-                <option value="bremer">Bremer</option>
-                <option value="marquinhos">Marquinhos</option>
-                <option value="ederMilitao">Eder Militão</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-
-        <div class="select-player">
-            Volante:
-            <select name="center-mid" id="center-mid">
-                <option value="selecione">Selecione...</option>
-                <option value="casemiro">Casemiro</option>
-                <option value="fabinho">Fabinho</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-
-        <div class="select-player">
-            Segundo Volante:
-            <select name="mid1" id="mid1">
-                <option value="selecione">Selecione...</option>
-                <option value="brunoGuimaraes">Bruno Guimaraes</option>
-                <option value="fred">Fred</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-
-        <div class="select-player">
-            Meia:
-            <select name="mid2" id="mid2">
-                <option value="selecione">Selecione...</option>
-                <option value="evertonRibeiro">Everton Ribeiro</option>
-                <option value="paqueta">Lucas Paquetá</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-
-        <div class="select-player">
-            Ponta direita:
-            <select name="right-wing" id="right-wing">
-                <option value="selecione">Selecione...</option>
-                <option value="antony">Antony</option>                
-                <option value="rafinha">Rafinha</option>
-                <option value="rodrygo">Rodrygo</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-
-        <div class="select-player">
-            Centroavante:
-            <select name="striker" id="striker">
-                <option value="selecione">Selecione...</option>
-                <option value="richarlison">Richarlison</option>
-                <option value="gabrielJesus">Gabriel Jesus</option>
-                <option value="pedro">Pedro</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-
-        <div class="select-player">
-            Ponta esquerda:
-            <select name="left-wing" id="left-wing">
-                <option value="selecione">Selecione...</option>
-                <option value="gabrielMartinelli">Gabriel Martinelli</option>
-                <option value="neymar">Neymar</option>
-                <option value="viniJunior">Vinicius Junior</option>
-            </select>
-            <button>Escalar</button>
-        </div>
-        </form>
-    </div>
-
-    <div id="field">
-        <div class="goal-zone">
-            <span class="goalkeeper"></span>
-        </div>
-
-        <div class="back-zone">
-            <span class="right-back"></span>
-            <span class="center-back"></span>
-            <span class="center-back"></span>
-            <span class="left-back"></span>
-        </div>
-
-        <div class="mid-zone">
-            <span class="center-mid"></span>
-            <span class="mid1"></span>
-            <span class="mid2"></span>
-        </div>
-
-        <div class="attack-zone">    
-            <span class="right-wing"></span>
-            <span class="striker"></span>
-            <span class="left-wing"></span>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
