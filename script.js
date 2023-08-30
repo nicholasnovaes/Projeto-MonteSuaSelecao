@@ -17,7 +17,7 @@ const relogio = setInterval(function time(){
     segundos.textContent = s;
 
 })
-
+/*
 const boxNameIdentifier = 'goalkeeper'
 const goalKeeper = document.querySelector(`#${boxNameIdentifier} select`);
 const goalKeeperButton = document.querySelector(`#${boxNameIdentifier} button`);
@@ -26,6 +26,55 @@ const fieldPosition = document.querySelector(`#field .${boxNameIdentifier} img`)
 goalKeeperButton.addEventListener('click', () => {
     fieldPosition.src = `/images/${goalKeeper.value}.png`;
 });
+*/
+
+/*
+function goleiro(){
+    const goalKeeper = document.querySelector('#goalkeeper select');
+    const goalKeeperbutton = document.querySelector('#goalkeeper button');
+    const fieldPosition = document.querySelector('#field .goalkeeper img');
+
+    fieldPosition.src = `images/${(goalKeeper.value)}.png`;
+}
+
+function lateralDireito(){
+    const rightBack = document.querySelector('#right-back select');
+    const rightBackButton = document.querySelector('#right-back button');
+    const fieldPosition = document.querySelector('#field .right-back img');
+
+    fieldPosition.src = `images/${rightBack.value}.jpg`;
+}
+
+function lateralEsquerdo(){
+    const leftBack = document.querySelector('#left-back select');
+    const leftBackButton = document.querySelector('#left-back button');
+    const fieldPosition = document.querySelector('#field .left-back img');
+
+    fieldPosition.src = `images/${leftBack.value}.jpg`;
+}
+*/
+
+
+function escalarJogador(position) {
+    console.log(`Escalar jogador: ${position}`);
+    const playerBox = document.querySelector(`#${position} select`);
+    const fieldPosition = document.querySelector(`#field .${position} img`);
+
+    fieldPosition.src = `images/${playerBox.value}.jpg`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.player-box button');
+    buttons.forEach(button => {
+        button.addEventListener('click', event => {
+            const position = event.target.getAttribute('data-position');
+            escalarJogador(position);
+        });
+    });
+});
+
+
+
 
 
 /** 

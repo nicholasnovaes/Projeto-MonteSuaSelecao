@@ -27,7 +27,7 @@
                         <option value="ederson">Ederson</option>
                         <option value="weverton">Weverton</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="goalkeeper">Escalar</button>
                 </div>
                 <div class="player-box" id="right-back">
                     Lateral direito:
@@ -36,7 +36,7 @@
                         <option value="danielAlves">Daniel Alves</option>
                         <option value="danilo">Danilo</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="right-back">Escalar</button>
                 </div>
                 <div class="player-box" id="left-back">
                     Lateral esquerdo:
@@ -45,7 +45,7 @@
                         <option value="alexsandro">Alex Sandro</option>
                         <option value="alexTelles">Alex Telles</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="left-back">Escalar</button>
                 </div>
                 <div class="player-box" id="center-back1">
                     Zagueiro:
@@ -56,9 +56,9 @@
                         <option value="marquinhos">Marquinhos</option>
                         <option value="ederMilitao">Eder Militão</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="center-back1">Escalar</button>
                 </div>
-                <div class="player-box" id="center-back1">
+                <div class="player-box" id="center-back2">
                     Zagueiro:
                     <select name="back-zone" >
                         <option value="selecione">Selecione...</option>
@@ -67,7 +67,7 @@
                         <option value="marquinhos">Marquinhos</option>
                         <option value="ederMilitao">Eder Militão</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="center-back2">Escalar</button>
                 </div>
                 <div class="player-box" id="center-mid">
                     Volante:
@@ -76,7 +76,7 @@
                         <option value="casemiro">Casemiro</option>
                         <option value="fabinho">Fabinho</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="center-mid">Escalar</button>
                 </div>
                 <div class="player-box" id="mid1">
                     Segundo Volante:
@@ -85,7 +85,7 @@
                         <option value="brunoGuimaraes">Bruno Guimaraes</option>
                         <option value="fred">Fred</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="mid1">Escalar</button>
                 </div>
                 <div class="player-box" id="mid2">
                     Meia:
@@ -94,7 +94,7 @@
                         <option value="evertonRibeiro">Everton Ribeiro</option>
                         <option value="paqueta">Lucas Paquetá</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="mid2">Escalar</button>
                 </div>
                 <div class="player-box" id="right-wing">
                     Ponta direita:
@@ -104,7 +104,7 @@
                         <option value="rafinha">Rafinha</option>
                         <option value="rodrygo">Rodrygo</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="right-wing">Escalar</button>
                 </div>
                 <div class="player-box" id="striker">
                     Centroavante:
@@ -114,18 +114,18 @@
                         <option value="gabrielJesus">Gabriel Jesus</option>
                         <option value="pedro">Pedro</option>
                     </select>
-                    <button>Escalar</button>
+                    <button data-position="striker">Escalar</button>
                 </div>
-                <div class="player-box">
+                <div class="player-box" id="left-wing">
                     Ponta esquerda:
-                    <select name="attack-zone" id="left-wing">
+                    <select name="attack-zone">
                         <option value="selecione">Selecione...</option>
                         <option value="gabrielMartinelli">Gabriel Martinelli</option>
                         <option value="neymar">Neymar</option>
                         <option value="viniJunior">Vinicius Junior</option>
                     </select>
-                    <button>Escalar</button>
-                </div>
+                    <button data-position="left-wing">Escalar</button>
+                </div>                
             </form>
         </div>
         <div id="field">
@@ -135,20 +135,20 @@
                 </span>
             </div>
             <div class="back-zone">
-                <span class="right-back">2</span>
-                <span class="center-back">3</span>
-                <span class="center-back">4</span>
-                <span class="left-back">6</span>
+                <span class="left-back"> <img src="" width="50px"></span>
+                <span class="center-back1"><img src="" width="50px"></span>
+                <span class="center-back2"><img src="" width="50px"></span>
+                <span class="right-back"> <img src="" width="50px"></span>
             </div>
             <div class="mid-zone">
-                <span class="mid1">8</span>
-                <span class="mid2">10</span>
-                <span class="center-mid">5</span>
+                <span class="mid1"><img src="" width="50px"></span>
+                <span class="mid2"><img src="" width="50px"></span>
+                <span class="center-mid"><img src="" width="50px"></span>
             </div>
             <div class="attack-zone">
-                <span class="right-wing">7</span>
-                <span class="striker">9</span>
-                <span class="left-wing">11</span>
+                <span class="left-wing"><img src="" width="50px"></span>
+                <span class="striker"><img src="" width="50px"></span>
+                <span class="right-wing"><img src="" width="50px"></span>
             </div>
         </div>
     </main>
